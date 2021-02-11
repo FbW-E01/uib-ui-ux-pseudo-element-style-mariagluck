@@ -1,0 +1,126 @@
+/* Part 1  */
+.quotes li {
+    list-style: none;
+    width: 90vw;
+    margin: auto;
+    line-height: 30px;
+}
+.quotes li::before {
+    /* content: "❝"; */
+    content: open-quote;
+    color: lightseagreen;
+    font-weight: bold;
+    font-size: 50px;
+}
+.quotes li::after {
+    content: close-quote;
+    color: lightseagreen;
+    font-weight: bold;
+    font-size: 50px;  
+}
+/* Part 2 */
+.files {
+    margin-left: 40vw;
+}
+.files li, a {
+    line-height: 80px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Rasa', serif;
+    letter-spacing: 5px;
+}
+
+[href="file.pdf"]::after { 
+   content: url(https://img.icons8.com/officel/64/000000/pdf.png);
+   position: relative;
+   top: 20px;
+   padding-left: 10px;
+} 
+
+[href="file.doc"]::after { 
+    content: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
+    position: relative;
+    top: 20px;
+    padding-left: 10px;
+ } 
+
+ [href="file.xls"]::after { 
+    content: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
+    position: relative;
+    top: 20px;
+    padding-left: 15px;
+ }
+
+ /* Part 3 */
+ /* Bread list with black and gradient colors */
+
+.bread_cheese li {
+    list-style: none;
+    font-size: 1.2em;
+    position: relative;
+    padding: 0px;
+    background: white;
+ } 
+.bread_cheese ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bread_cheese {
+    width: 60vw;
+    margin-left: 20vw;
+    font-size: 1.2em;
+    border: 3px solid black;
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 200px;
+    background: white;
+}
+
+.bread_cheese:before {
+   content:"";
+   display: block;
+   width: 100%;
+   height: 10px;
+   background: linear-gradient( to right,#2edaf8, #c9d60a);
+}
+
+.bread_cheese:after {
+   content:"";
+   display: block;
+   width: 100%;
+   height: 10px;
+   background: linear-gradient(to right,  #c9d60a, #2edaf8);
+}
+
+/* Other stuff with black and gradient colors */
+
+.other_stuff {
+     width: 60vw;
+     margin-left: 20vw;
+     font-size: 1.2em;
+     border: 3px solid black;
+     position: relative;
+     display: inline-block;
+     padding: 0px;
+     margin-bottom: 200px;
+     background: white;
+ }
+ 
+ .other_stuff:before {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient( to right,#2edaf8, #c9d60a);
+}
+
+.other_stuff:after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right,  #c9d60a, #2edaf8);
+}
+
